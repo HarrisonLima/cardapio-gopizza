@@ -9,13 +9,12 @@ const GlobalStyle = createGlobalStyle`
 
   :root{
     background-color: var(--background-color);
-    color: var(--terciary-color);
+    color: var(--secondary-color);
     font-family: var(--font-style);
     font-size: 16px;
 
     --primary-color: #E7E7E7;
     --secondary-color: #C9C9C9;
-    --terciary-color: #BDBDBD;
 
     --font-style: "Jost", sans serif;
 
