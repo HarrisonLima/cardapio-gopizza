@@ -1,333 +1,244 @@
-{
-  "Pizzas tradicionais": [
-    {
-      "título": "Atum",
-      "ingredientes": "Molho de tomate, atum, cebola, mussarela",
-      "valor_tamanho_pequeno": "R$ 28,00",
-      "valor_tamanho_médio": "R$ 33,00",
-      "valor_tamanho_grande": "R$ 38,00",
-      "valor_tamanho_extra_grande": "R$ 43,00"
-    },
-    {
-      "título": "Bacon com Milho",
-      "ingredientes": "Molho de tomate, bacon, milho, mussarela",
-      "valor_tamanho_pequeno": "R$ 29,00",
-      "valor_tamanho_médio": "R$ 34,00",
-      "valor_tamanho_grande": "R$ 39,00",
-      "valor_tamanho_extra_grande": "R$ 44,00"
-    },
-    {
-      "título": "Calabresa",
-      "ingredientes": "Molho de tomate, calabresa, cebola, mussarela",
-      "valor_tamanho_pequeno": "R$ 22,00",
-      "valor_tamanho_médio": "R$ 27,00",
-      "valor_tamanho_grande": "R$ 32,00",
-      "valor_tamanho_extra_grande": "R$ 37,00"
-    },
-    {
-      "título": "Frango com Catupiry",
-      "ingredientes": "Molho de tomate, frango desfiado, catupiry",
-      "valor_tamanho_pequeno": "R$ 26,00",
-      "valor_tamanho_médio": "R$ 31,00",
-      "valor_tamanho_grande": "R$ 36,00",
-      "valor_tamanho_extra_grande": "R$ 41,00"
-    },
-    {
-      "título": "Lombo",
-      "ingredientes": "Molho de tomate, lombo defumado, cebola, mussarela",
-      "valor_tamanho_pequeno": "R$ 31,00",
-      "valor_tamanho_médio": "R$ 36,00",
-      "valor_tamanho_grande": "R$ 41,00",
-      "valor_tamanho_extra_grande": "R$ 46,00"
-    },
-    {
-      "título": "Mussarela",
-      "ingredientes": "Molho de tomate, mussarela",
-      "valor_tamanho_pequeno": "R$ 20,00",
-      "valor_tamanho_médio": "R$ 25,00",
-      "valor_tamanho_grande": "R$ 30,00",
-      "valor_tamanho_extra_grande": "R$ 35,00"
-    },
-
-    {
-      "título": "Palmito",
-      "ingredientes": "Molho de tomate, palmito, cebola, mussarela",
-      "valor_tamanho_pequeno": "R$ 29,00",
-      "valor_tamanho_médio": "R$ 34,00",
-      "valor_tamanho_grande": "R$ 39,00",
-      "valor_tamanho_extra_grande": "R$ 44,00"
-    },
-    {
-      "título": "Pepperoni",
-      "ingredientes": "Molho de tomate, pepperoni, mussarela",
-      "valor_tamanho_pequeno": "R$ 27,00",
-      "valor_tamanho_médio": "R$ 32,00",
-      "valor_tamanho_grande": "R$ 37,00",
-      "valor_tamanho_extra_grande": "R$ 42,00"
-    },
-    {
-      "título": "Portuguesa",
-      "ingredientes": "Molho de tomate, presunto, mussarela, ovos, cebola, ervilha, azeitona",
-      "valor_tamanho_pequeno": "R$ 24,00",
-      "valor_tamanho_médio": "R$ 29,00",
-      "valor_tamanho_grande": "R$ 34,00",
-      "valor_tamanho_extra_grande": "R$ 39,00"
-    },
-    {
-      "título": "Presunto",
-      "ingredientes": "Molho de tomate, presunto, mussarela",
-      "valor_tamanho_pequeno": "R$ 26,00",
-      "valor_tamanho_médio": "R$ 31,00",
-      "valor_tamanho_grande": "R$ 36,00",
-      "valor_tamanho_extra_grande": "R$ 41,00"
-    },
-    {
-      "título": "Quatro Queijos",
-      "ingredientes": "Molho de tomate, mussarela, parmesão, provolone, gorgonzola",
-      "valor_tamanho_pequeno": "R$ 28,00",
-      "valor_tamanho_médio": "R$ 33,00",
-      "valor_tamanho_grande": "R$ 38,00",
-      "valor_tamanho_extra_grande": "R$ 43,00"
-    }
-  ],
-  "Pizzas especiais": [
-    {
-      "título": "Aliche",
-      "ingredientes": "Molho de tomate, aliche, cebola, mussarela",
-      "valor_tamanho_pequeno": "R$ 27,00",
-      "valor_tamanho_médio": "R$ 32,00",
-      "valor_tamanho_grande": "R$ 37,00",
-      "valor_tamanho_extra_grande": "R$ 42,00"
-    },
-    {
-      "título": "Brócolis com Requeijão",
-      "ingredientes": "Molho de tomate, brócolis, requeijão, mussarela",
-      "valor_tamanho_pequeno": "R$ 31,00",
-      "valor_tamanho_médio": "R$ 36,00",
-      "valor_tamanho_grande": "R$ 41,00",
-      "valor_tamanho_extra_grande": "R$ 46,00"
-    },
-    {
-      "título": "Marguerita",
-      "ingredientes": "Molho de tomate, mussarela, tomate, manjericão",
-      "valor_tamanho_pequeno": "R$ 25,00",
-      "valor_tamanho_médio": "R$ 30,00",
-      "valor_tamanho_grande": "R$ 35,00",
-      "valor_tamanho_extra_grande": "R$ 40,00"
-    },
-    {
-      "título": "Marguerita com Pesto",
-      "ingredientes": "Molho de tomate, mussarela, tomate, manjericão, pesto",
-      "valor_tamanho_pequeno": "R$ 32,00",
-      "valor_tamanho_médio": "R$ 37,00",
-      "valor_tamanho_grande": "R$ 42,00",
-      "valor_tamanho_extra_grande": "R$ 47,00"
-    },
-    {
-      "título": "Mista",
-      "ingredientes": "Molho de tomate, presunto, calabresa, cebola, mussarela",
-      "valor_tamanho_pequeno": "R$ 33,00",
-      "valor_tamanho_médio": "R$ 38,00",
-      "valor_tamanho_grande": "R$ 43,00",
-      "valor_tamanho_extra_grande": "R$ 48,00"
-    },
-    {
-      "título": "Napolitana",
-      "ingredientes": "Molho de tomate, mussarela, tomate, azeitona, orégano",
-      "valor_tamanho_pequeno": "R$ 23,00",
-      "valor_tamanho_médio": "R$ 28,00",
-      "valor_tamanho_grande": "R$ 33,00",
-      "valor_tamanho_extra_grande": "R$ 38,00"
-    },
-    {
-      "título": "Rúcula com Tomate Seco",
-      "ingredientes": "Molho de tomate, rúcula, tomate seco, mussarela",
-      "valor_tamanho_pequeno": "R$ 32,00",
-      "valor_tamanho_médio": "R$ 37,00",
-      "valor_tamanho_grande": "R$ 42,00",
-      "valor_tamanho_extra_grande": "R$ 47,00"
-    },
-    {
-      "título": "Toscana",
-      "ingredientes": "Molho de tomate, calabresa, bacon, cebola, mussarela",
-      "valor_tamanho_pequeno": "R$ 30,00",
-      "valor_tamanho_médio": "R$ 35,00",
-      "valor_tamanho_grande": "R$ 40,00",
-      "valor_tamanho_extra_grande": "R$ 45,00"
-    },
-    {
-      "título": "Vegetariana",
-      "ingredientes": "Molho de tomate, champignon, milho, ervilha, tomate, cebola, pimentão, azeitona",
-      "valor_tamanho_pequeno": "R$ 30,00",
-      "valor_tamanho_médio": "R$ 35,00",
-      "valor_tamanho_grande": "R$ 40,00",
-      "valor_tamanho_extra_grande": "R$ 45,00"
-    }
-  ],
-  "Pizzas doces": [
-    {
-      "título": "Banana com Canela",
-      "ingredientes": "Banana, canela em pó, açúcar mascavo",
-      "valor_tamanho_pequeno": "R$ 22,00",
-      "valor_tamanho_médio": "R$ 27,00",
-      "valor_tamanho_grande": "R$ 32,00",
-      "valor_tamanho_extra_grande": "R$ 37,00"
-    },
-    {
-      "título": "Chocolate com Morango",
-      "ingredientes": "Chocolate ao leite, morangos frescos",
-      "valor_tamanho_pequeno": "R$ 25,00",
-      "valor_tamanho_médio": "R$ 30,00",
-      "valor_tamanho_grande": "R$ 35,00",
-      "valor_tamanho_extra_grande": "R$ 40,00"
-    },
-    {
-      "título": "Coco com Leite Condensado",
-      "ingredientes": "Coco ralado, leite condensado",
-      "valor_tamanho_pequeno": "R$ 27,00",
-      "valor_tamanho_médio": "R$ 32,00",
-      "valor_tamanho_grande": "R$ 37,00",
-      "valor_tamanho_extra_grande": "R$ 42,00"
-    },
-    {
-      "título": "Doce de Leite com Amêndoas",
-      "ingredientes": "Doce de leite, amêndoas laminadas",
-      "valor_tamanho_pequeno": "R$ 26,00",
-      "valor_tamanho_médio": "R$ 31,00",
-      "valor_tamanho_grande": "R$ 36,00",
-      "valor_tamanho_extra_grande": "R$ 41,00"
-    },
-    {
-      "título": "Maçã com Canela",
-      "ingredientes": "Maçã, canela em pó, açúcar mascavo",
-      "valor_tamanho_pequeno": "R$ 23,00",
-      "valor_tamanho_médio": "R$ 28,00",
-      "valor_tamanho_grande": "R$ 33,00",
-      "valor_tamanho_extra_grande": "R$ 38,00"
-    },
-    {
-      "título": "Morango com Leite Condensado",
-      "ingredientes": "Morangos frescos, leite condensado",
-      "valor_tamanho_pequeno": "R$ 29,00",
-      "valor_tamanho_médio": "R$ 34,00",
-      "valor_tamanho_grande": "R$ 39,00",
-      "valor_tamanho_extra_grande": "R$ 44,00"
-    },
-    {
-      "título": "Nutella com Banana",
-      "ingredientes": "Nutella, banana, açúcar de confeiteiro",
-      "valor_tamanho_pequeno": "R$ 28,00",
-      "valor_tamanho_médio": "R$ 33,00",
-      "valor_tamanho_grande": "R$ 38,00",
-      "valor_tamanho_extra_grande": "R$ 43,00"
-    },
-    {
-      "título": "Nutella com Morango",
-      "ingredientes": "Nutella, morangos frescos",
-      "valor_tamanho_pequeno": "R$ 31,00",
-      "valor_tamanho_médio": "R$ 36,00",
-      "valor_tamanho_grande": "R$ 41,00",
-      "valor_tamanho_extra_grande": "R$ 46,00"
-    },
-    {
-      "título": "Prestígio",
-      "ingredientes": "Chocolate ao leite, coco ralado, leite condensado",
-      "valor_tamanho_pequeno": "R$ 30,00",
-      "valor_tamanho_médio": "R$ 35,00",
-      "valor_tamanho_grande": "R$ 40,00",
-      "valor_tamanho_extra_grande": "R$ 45,00"
-    },
-    {
-      "título": "Romeu e Julieta",
-      "ingredientes": "Goiabada, queijo minas",
-      "valor_tamanho_pequeno": "R$ 24,00",
-      "valor_tamanho_médio": "R$ 29,00",
-      "valor_tamanho_grande": "R$ 34,00",
-      "valor_tamanho_extra_grande": "R$ 39,00"
-    }
-  ],
-  "Bebidas": [
-    {
-      "bebida": "Água de Coco",
-      "valor": "R$ 7,00"
-    },
-    {
-      "bebida": "Água Mineral com Gás",
-      "valor": "R$ 4,00"
-    },
-    {
-      "bebida": "Água Mineral sem Gás",
-      "valor": "R$ 4,00"
-    },
-    {
-      "bebida": "Chá Gelado de Limão",
-      "valor": "R$ 6,00"
-    },
-    {
-      "bebida": "Refrigerante Coca-Cola",
-      "valor": "R$ 5,00"
-    },
-    {
-      "bebida": "Refrigerante Guaraná",
-      "valor": "R$ 5,00"
-    },
-    {
-      "bebida": "Refrigerante Sprite",
-      "valor": "R$ 5,00"
-    },
-    {
-      "bebida": "Suco de Abacaxi Natural",
-      "valor": "R$ 8,00"
-    },
-    {
-      "bebida": "Suco de Laranja Natural",
-      "valor": "R$ 8,00"
-    },
-    {
-      "bebida": "Suco de Maracujá Natural",
-      "valor": "R$ 8,00"
-    }
-  ],
-  "Bebidas alcóolicas": [
-    {
-      "bebida": "Bloody Mary",
-      "valor": "R$ 24,00"
-    },
-    {
-      "bebida": "Caipirinha",
-      "valor": "R$ 15,00"
-    },
-    {
-      "bebida": "Caipiroska",
-      "valor": "R$ 18,00"
-    },
-    {
-      "bebida": "Cosmopolitan",
-      "valor": "R$ 22,00"
-    },
-    {
-      "bebida": "Gin Tônica",
-      "valor": "R$ 25,00"
-    },
-    {
-      "bebida": "Martini",
-      "valor": "R$ 20,00"
-    },
-    {
-      "bebida": "Margarita",
-      "valor": "R$ 20,00"
-    },
-    {
-      "bebida": "Mojito",
-      "valor": "R$ 18,00"
-    },
-    {
-      "bebida": "Tequila Sunrise",
-      "valor": "R$ 21,00"
-    },
-    {
-      "bebida": "Whisky Sour",
-      "valor": "R$ 23,00"
-    }
-  ]
-}
+[
+  {
+    "Pizzas tradicionais": [
+      {
+        "título": "Atum",
+        "ingredientes": "Molho de tomate, atum, cebola, mussarela",
+        "valor": ["R$ 28,00", "R$ 33,00", "R$ 38,00", "R$ 43,00"]
+      },
+      {
+        "título": "Bacon com Milho",
+        "ingredientes": "Molho de tomate, bacon, milho, mussarela",
+        "valor": ["R$ 29,00", "R$ 34,00", "R$ 39,00", "R$ 44,00"]
+      },
+      {
+        "título": "Calabresa",
+        "ingredientes": "Molho de tomate, calabresa, cebola, mussarela",
+        "valor": ["R$ 22,00", "R$ 27,00", "R$ 32,00", "R$ 37,00"]
+      },
+      {
+        "título": "Frango com Catupiry",
+        "ingredientes": "Molho de tomate, frango desfiado, catupiry",
+        "valor": ["R$ 26,00", "R$ 31,00", "R$ 36,00", "R$ 41,00"]
+      },
+      {
+        "título": "Lombo",
+        "ingredientes": "Molho de tomate, lombo defumado, cebola, mussarela",
+        "valor": ["R$ 31,00", "R$ 36,00", "R$ 41,00", "R$ 46,00"]
+      },
+      {
+        "título": "Mussarela",
+        "ingredientes": "Molho de tomate, mussarela",
+        "valor": ["R$ 20,00", "R$ 25,00", "R$ 30,00", "R$ 35,00"]
+      },
+      {
+        "título": "Palmito",
+        "ingredientes": "Molho de tomate, palmito, cebola, mussarela",
+        "valor": ["R$ 29,00", "R$ 34,00", "R$ 39,00", "R$ 44,00"]
+      },
+      {
+        "título": "Pepperoni",
+        "ingredientes": "Molho de tomate, pepperoni, mussarela",
+        "valor": ["R$ 27,00", "R$ 32,00", "R$ 37,00", "R$ 42,00"]
+      },
+      {
+        "título": "Portuguesa",
+        "ingredientes": "Molho de tomate, presunto, mussarela, ovos, cebola, ervilha, azeitona",
+        "valor": ["R$ 24,00", "R$ 29,00", "R$ 34,00", "R$ 39,00"]
+      },
+      {
+        "título": "Presunto",
+        "ingredientes": "Molho de tomate, presunto, mussarela",
+        "valor": ["R$ 26,00", "R$ 31,00", "R$ 36,00", "R$ 41,00"]
+      },
+      {
+        "título": "Quatro Queijos",
+        "ingredientes": "Molho de tomate, mussarela, parmesão, provolone, gorgonzola",
+        "valor": ["R$ 28,00", "R$ 33,00", "R$ 38,00", "R$ 43,00"]
+      }
+    ],
+    "Pizzas especiais": [
+      {
+        "título": "Aliche",
+        "ingredientes": "Molho de tomate, aliche, cebola, mussarela",
+        "valor": ["R$ 27,00", "R$ 32,00", "R$ 37,00", "R$ 42,00"]
+      },
+      {
+        "título": "Brócolis com Requeijão",
+        "ingredientes": "Molho de tomate, brócolis, requeijão, mussarela",
+        "valor": ["R$ 31,00", "R$ 36,00", "R$ 41,00", "R$ 46,00"]
+      },
+      {
+        "título": "Marguerita",
+        "ingredientes": "Molho de tomate, mussarela, tomate, manjericão",
+        "valor": ["R$ 25,00", "R$ 30,00", "R$ 35,00", "R$ 40,00"]
+      },
+      {
+        "título": "Marguerita com Pesto",
+        "ingredientes": "Molho de tomate, mussarela, tomate, manjericão, pesto",
+        "valor": ["R$ 32,00", "R$ 37,00", "R$ 42,00", "R$ 47,00"]
+      },
+      {
+        "título": "Mista",
+        "ingredientes": "Molho de tomate, presunto, calabresa, cebola, mussarela",
+        "valor": ["R$ 33,00", "R$ 38,00", "R$ 43,00", "R$ 48,00"]
+      },
+      {
+        "título": "Napolitana",
+        "ingredientes": "Molho de tomate, mussarela, tomate, azeitona, orégano",
+        "valor": ["R$ 23,00", "R$ 28,00", "R$ 33,00", "R$ 38,00"]
+      },
+      {
+        "título": "Rúcula com Tomate Seco",
+        "ingredientes": "Molho de tomate, rúcula, tomate seco, mussarela",
+        "valor": ["R$ 32,00", "R$ 37,00", "R$ 42,00", "R$ 47,00"]
+      },
+      {
+        "título": "Toscana",
+        "ingredientes": "Molho de tomate, calabresa, bacon, cebola, mussarela",
+        "valor": ["R$ 30,00", "R$ 35,00", "R$ 40,00", "R$ 45,00"]
+      },
+      {
+        "título": "Vegetariana",
+        "ingredientes": "Molho de tomate, champignon, milho, ervilha, tomate, cebola, pimentão, azeitona",
+        "valor": ["R$ 30,00", "R$ 35,00", "R$ 40,00", "R$ 45,00"]
+      }
+    ],
+    "Pizzas doces": [
+      {
+        "título": "Banana com Canela",
+        "ingredientes": "Banana, canela em pó, açúcar mascavo",
+        "valor": ["R$ 22,00", "R$ 27,00", "R$ 32,00", "R$ 37,00"]
+      },
+      {
+        "título": "Chocolate com Morango",
+        "ingredientes": "Chocolate ao leite, morangos frescos",
+        "valor": ["R$ 25,00", "R$ 30,00", "R$ 35,00", "R$ 40,00"]
+      },
+      {
+        "título": "Coco com Leite Condensado",
+        "ingredientes": "Coco ralado, leite condensado",
+        "valor": ["R$ 27,00", "R$ 32,00", "R$ 37,00", "R$ 42,00"]
+      },
+      {
+        "título": "Doce de Leite com Amêndoas",
+        "ingredientes": "Doce de leite, amêndoas laminadas",
+        "valor": ["R$ 26,00", "R$ 31,00", "R$ 36,00", "R$ 41,00"]
+      },
+      {
+        "título": "Maçã com Canela",
+        "ingredientes": "Maçã, canela em pó, açúcar mascavo",
+        "valor": ["R$ 23,00", "R$ 28,00", "R$ 33,00", "R$ 38,00"]
+      },
+      {
+        "título": "Morango com Leite Condensado",
+        "ingredientes": "Morangos frescos, leite condensado",
+        "valor": ["R$ 29,00", "R$ 34,00", "R$ 39,00", "R$ 44,00"]
+      },
+      {
+        "título": "Nutella com Banana",
+        "ingredientes": "Nutella, banana, açúcar de confeiteiro",
+        "valor": ["R$ 28,00", "R$ 33,00", "R$ 38,00", "R$ 43,00"]
+      },
+      {
+        "título": "Nutella com Morango",
+        "ingredientes": "Nutella, morangos frescos",
+        "valor": ["R$ 31,00", "R$ 36,00", "R$ 41,00", "R$ 46,00"]
+      },
+      {
+        "título": "Prestígio",
+        "ingredientes": "Chocolate ao leite, coco ralado, leite condensado",
+        "valor": ["R$ 30,00", "R$ 35,00", "R$ 40,00", "R$ 45,00"]
+      },
+      {
+        "título": "Romeu e Julieta",
+        "ingredientes": "Goiabada, queijo minas",
+        "valor": ["R$ 24,00", "R$ 29,00", "R$ 34,00", "R$ 39,00"]
+      }
+    ],
+    "Bebidas": [
+      {
+        "título": "Água de Coco",
+        "valor": "R$ 7,00"
+      },
+      {
+        "título": "Água Mineral com Gás",
+        "valor": "R$ 4,00"
+      },
+      {
+        "título": "Água Mineral sem Gás",
+        "valor": "R$ 4,00"
+      },
+      {
+        "título": "Chá Gelado de Limão",
+        "valor": "R$ 6,00"
+      },
+      {
+        "título": "Refrigerante Coca-Cola",
+        "valor": "R$ 5,00"
+      },
+      {
+        "título": "Refrigerante Guaraná",
+        "valor": "R$ 5,00"
+      },
+      {
+        "título": "Refrigerante Sprite",
+        "valor": "R$ 5,00"
+      },
+      {
+        "título": "Suco de Abacaxi Natural",
+        "valor": "R$ 8,00"
+      },
+      {
+        "título": "Suco de Laranja Natural",
+        "valor": "R$ 8,00"
+      },
+      {
+        "título": "Suco de Maracujá Natural",
+        "valor": "R$ 8,00"
+      }
+    ],
+    "Bebidas alcóolicas": [
+      {
+        "título": "Bloody Mary",
+        "valor": "R$ 24,00"
+      },
+      {
+        "título": "Caipirinha",
+        "valor": "R$ 15,00"
+      },
+      {
+        "título": "Caipiroska",
+        "valor": "R$ 18,00"
+      },
+      {
+        "título": "Cosmopolitan",
+        "valor": "R$ 22,00"
+      },
+      {
+        "título": "Gin Tônica",
+        "valor": "R$ 25,00"
+      },
+      {
+        "título": "Martini",
+        "valor": "R$ 20,00"
+      },
+      {
+        "título": "Margarita",
+        "valor": "R$ 20,00"
+      },
+      {
+        "título": "Mojito",
+        "valor": "R$ 18,00"
+      },
+      {
+        "título": "Tequila Sunrise",
+        "valor": "R$ 21,00"
+      },
+      {
+        "título": "Whisky Sour",
+        "valor": "R$ 23,00"
+      }
+    ]
+  }
+]
