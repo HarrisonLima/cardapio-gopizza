@@ -98,6 +98,11 @@ const CustomMenuSection = styled.span`
   gap: 8px;
   justify-content: space-between;
 
+  &:hover {
+    background-color: rgba(40, 40, 40, 0.3);
+    transition: 0.1s background-color;
+  }
+
   @media (max-width: 1280px) {
     gap: 32px;
   }
