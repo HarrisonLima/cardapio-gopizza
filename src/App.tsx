@@ -7,6 +7,21 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   };
 
+  html ::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  };
+
+  html ::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+  };
+
+  html ::-webkit-scrollbar-track {
+    background: transparent;
+  };
+
   :root{
     background-color: var(--background-color);
     color: var(--secondary-color);
@@ -20,6 +35,8 @@ const GlobalStyle = createGlobalStyle`
 
     --background-color: #121212;
     --border-color: #585858;
+
+    overflow-x: hidden;
   }
 `;
 
