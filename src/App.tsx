@@ -36,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
     --background-color: #121212;
     --border-color: #585858;
 
+    --light-box-effect: rgba(231, 231, 231, 0.3) 0px 10px 36px 0px,
+      rgba(231, 231, 231, 0.1) 0px 0px 0px 1px;
+    --light-text-effect: 0px 0px 5px rgba(231, 231, 231, 0.7);
+
     overflow-x: hidden;
   }
 `;
