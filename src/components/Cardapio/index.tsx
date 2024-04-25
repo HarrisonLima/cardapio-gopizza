@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import cardapio from "./cardapio.json";
+import IOption from "../../interfaces/IOption";
 
 const CustomSection = styled.section`
-  box-sizing: border-box;
   max-width: 1920px;
   width: 100vw;
 `;
 
 const CustomContent = styled.div`
-  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -30,9 +29,15 @@ const CustomMenu = styled.div`
   gap: 32px;
 `;
 
-const CustomSectionTitle = styled.h2`
+const CustomMenuTitleContainer = styled.span`
+  align-items: center;
   border-bottom: 1px solid var(--border-color);
   color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+`;
+
+const CustomMenuTitle = styled.h2`
   font-size: 2rem;
 
   @media (max-width: 1280px) {
@@ -44,7 +49,40 @@ const CustomSectionTitle = styled.h2`
   }
 `;
 
-const CustomSectionContent = styled.div`
+const CustomMenuSizes = styled.span`
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 8px;
+  }
+`;
+
+const CustomSize = styled.p`
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  width: 160px;
+
+  @media (max-width: 1280px) {
+    font-size: 1.5rem;
+    width: 96px;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 1.25rem;
+    width: 80px;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 1rem;
+  }
+`;
+
+const CustomMenuSections = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -55,7 +93,7 @@ const CustomSectionContent = styled.div`
   }
 `;
 
-const CustomOption = styled.div`
+const CustomMenuSection = styled.span`
   display: flex;
   gap: 8px;
   justify-content: space-between;
@@ -73,18 +111,18 @@ const CustomOption = styled.div`
   }
 `;
 
-const CustomContainer = styled.span`
+const CustomMenuSectionContent = styled.span`
   display: flex;
   flex-direction: column;
 `;
 
-const CustomTitleOption = styled.h3`
+const CustomMenuSectionTitle = styled.h3`
   @media (max-width: 1280px) {
     font-size: 0.875rem;
   }
 `;
 
-const CustomIngredientes = styled.p`
+const CustomMenuSectionIngredientes = styled.p`
   @media (max-width: 1280px) {
     font-size: 0.875rem;
   }
@@ -94,7 +132,7 @@ const CustomIngredientes = styled.p`
   }
 `;
 
-const CustomPrices = styled.div`
+const CustomMenuPrices = styled.div`
   align-items: center;
   display: flex;
 
@@ -107,17 +145,24 @@ const CustomPrices = styled.div`
 
 const CustomContainerPrice = styled.span`
   align-items: center;
+  border-right: 1px solid var(--border-color);
   display: flex;
   justify-content: center;
   height: 100%;
   width: 160px;
 
+  &:first-child {
+    border-left: 1px solid var(--border-color);
+  }
+
   @media (max-width: 1280px) {
-    width: 80px;
+    width: 96px;
   }
 
   @media (max-width: 720px) {
-    width: 64px;
+    width: 80px;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
   }
 `;
 
@@ -130,6 +175,20 @@ const CustomPrice = styled.h3`
     font-size: 0.75rem;
   }
 `;
+const varietesOfSize = [
+  "Pizzas tradicionais",
+  "Pizzas especiais",
+  "Pizzas doces",
+];
+
+const sizeContainer = (
+  <CustomMenuSizes>
+    <CustomSize>P</CustomSize>
+    <CustomSize>M</CustomSize>
+    <CustomSize>G</CustomSize>
+    <CustomSize>GG</CustomSize>
+  </CustomMenuSizes>
+);
 
 const Cardapio = () => {
   return (
@@ -137,25 +196,45 @@ const Cardapio = () => {
       <CustomContent>
         <CustomMenu>
           {Object.entries(cardapio[0]).map(
-            ([modulo, opcoes]: [string, any[]], index) => {
+            ([modulo, opcoes]: [string, IOption[]], index) => {
+              const isVarietyOfSize = varietesOfSize.includes(modulo);
+
               return (
                 <div key={index}>
-                  <CustomSectionTitle>{modulo}</CustomSectionTitle>
-                  <CustomSectionContent>
-                    {opcoes.map((opcao: any, index) => {
+                  <CustomMenuTitleContainer>
+                    <CustomMenuTitle>{modulo}</CustomMenuTitle>
+                    {isVarietyOfSize ? { ...sizeContainer } : null}
+                  </CustomMenuTitleContainer>
+                  <CustomMenuSections>
+                    {opcoes.map((opcao: IOption, index) => {
                       return (
-                        <CustomOption key={index}>
-                          <CustomContainer>
-                            <CustomTitleOption>
-                              {opcao.título}
-                            </CustomTitleOption>
+                        <CustomMenuSection key={index}>
+                          <CustomMenuSectionContent>
+                            <CustomMenuSectionTitle>
+                              {opcao.titulo}
+                            </CustomMenuSectionTitle>
                             {opcao.ingredientes ? (
-                              <CustomIngredientes>
-                                ({opcao.ingredientes})
-                              </CustomIngredientes>
+                              <CustomMenuSectionIngredientes>
+                                (
+                                {opcao.ingredientes.reduce(
+                                  (
+                                    acc: string[],
+                                    ingrediente: string,
+                                    index
+                                  ) => {
+                                    if (index === 0) {
+                                      return [ingrediente];
+                                    } else {
+                                      return [...acc, `, ${ingrediente}`];
+                                    }
+                                  },
+                                  []
+                                )}
+                                )
+                              </CustomMenuSectionIngredientes>
                             ) : null}
-                          </CustomContainer>
-                          <CustomPrices>
+                          </CustomMenuSectionContent>
+                          <CustomMenuPrices>
                             {Array.isArray(opcao.valor) ? (
                               opcao.valor.map(
                                 (valor: string, index: number) => (
@@ -172,11 +251,11 @@ const Cardapio = () => {
                                 <CustomPrice>{opcao.valor}</CustomPrice>
                               </CustomContainerPrice>
                             )}
-                          </CustomPrices>
-                        </CustomOption>
+                          </CustomMenuPrices>
+                        </CustomMenuSection>
                       );
                     })}
-                  </CustomSectionContent>
+                  </CustomMenuSections>
                 </div>
               );
             }
