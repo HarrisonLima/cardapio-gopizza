@@ -13,6 +13,10 @@ const CustomFooter = styled.footer`
   justify-content: center;
   margin-top: 64px;
   width: 100vw;
+
+  @media (max-width: 360px) {
+    margin-top: 32px;
+  }
 `;
 
 const CustomFooterContent = styled.div`
@@ -25,17 +29,59 @@ const CustomFooterContent = styled.div`
   @media (max-width: 1280px) {
     padding: 64px 32px;
   }
+
+  @media (max-width: 780px) {
+    gap: 32px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 16px;
+    padding: 24px;
+  }
+
+  @media (max-width: 360px) {
+    gap: 8px;
+    padding: 16px;
+  }
 `;
 
-const CustomTitle = styled.h1`
+const CustomLogoContainer = styled.span`
+  display: flex;
+  justify-content: center;
+`;
+
+const CustomLogo = styled.h1`
   color: var(--primary-color);
   font-size: 2.5rem;
   font-weight: 700;
-  text-align: center;
+  position: relative;
 
   &:hover {
     text-shadow: var(--light-text-effect);
     transition: 0.3s text-shadow;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &::before {
+    left: -32px;
+    border-width: 10px 0 10px 18px;
+    border-color: transparent transparent transparent var(--primary-color);
+  }
+
+  &::after {
+    right: -32px;
+    border-width: 10px 18px 10px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
   }
 
   @media (max-width: 720px) {
@@ -44,67 +90,82 @@ const CustomTitle = styled.h1`
 
   @media (max-width: 480px) {
     font-size: 1.5rem;
+
+    &::before {
+      left: -24px;
+      border-width: 6px 0 6px 12px;
+      border-color: transparent transparent transparent var(--primary-color);
+    }
+
+    &::after {
+      right: -24px;
+      border-width: 6px 12px 6px 0;
+      border-color: transparent var(--primary-color) transparent transparent;
+    }
   }
 `;
 
 const CustomContainers = styled.div`
+  align-items: flex-start;
   display: flex;
-  column-gap: 128px;
-  row-gap: 64px;
+  flex-wrap: wrap;
+  gap: 32px;
   justify-content: center;
+  margin-top: 32px;
+  width: 100%;
 
-  @media (max-width: 1440px) {
-    column-gap: 48px;
-    flex-wrap: wrap;
+  > span:not(:last-child) {
+    border-right: 1px solid var(--border-color);
+    padding-right: 16px;
   }
 
-  @media (max-width: 1280px) {
-    column-gap: 32px;
-  }
+  @media (max-width: 780px) {
+    gap: 32px;
 
-  @media (max-width: 720px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
+    > span:not(:last-child) {
+      border-bottom: 1px solid var(--border-color);
+      border-right: 0;
+      padding-right: 0px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    margin-top: 32px;
+    gap: 32px;
   }
 `;
 
 const CustomContainer = styled.span`
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
-  gap: 24px;
-  min-width: 250px;
+  gap: 16px;
   max-width: 400px;
-
-  &[data-barvisible="true"] {
-    border-right: 1px solid var(--border-color);
-    padding-right: 48px;
-  }
-
-  > h2:hover {
-    color: var(--primary-color);
-    text-shadow: var(--light-text-effect);
-  }
-
-  @media (max-width: 1440px) {
-    &[data-barvisible="true"] {
-      padding-right: 32px;
-    }
-  }
+  min-height: 200px;
+  min-width: 200px;
 
   @media (max-width: 1280px) {
     min-width: 160px;
     max-width: 320px;
-    &[data-barvisible="true"] {
-      padding-right: 12px;
-    }
+  }
 
-    @media (max-width: 720px) {
-      flex-grow: 2;
-      &[data-barvisible="true"] {
-        flex-grow: 1;
-      }
-    }
+  @media (max-width: 780px) {
+    flex-grow: 0;
+    max-width: 400px;
+    min-height: 150px;
+    min-width: 200px;
+    padding-bottom: 16px;
+  }
+`;
+
+const CustomTitleContainer = styled.h2`
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.25rem;
   }
 `;
 
@@ -128,6 +189,10 @@ const CustomItemList = styled.li`
 const CustomTexto = styled.p`
   text-align: justify;
 
+  &:hover {
+    color: var(--primary-color);
+  }
+
   @media (max-width: 1280px) {
     font-size: 0.875rem;
   }
@@ -145,6 +210,10 @@ const CustomSocialMediasIcons = styled.span`
   display: flex;
   gap: 32px;
   justify-content: center;
+
+  @media (max-width: 480px) {
+    gap: 16px;
+  }
 `;
 
 const CustomContainerIcon = styled.span`
@@ -164,11 +233,20 @@ const CustomContainerIcon = styled.span`
     color: var(--background-color);
     transition: 0.3s background-color, 0.3s color, 0.3s box-shadow;
   }
+
+  @media (max-width: 480px) {
+    padding: 8px;
+  }
 `;
 
 const CustomIcon = styled(FontAwesomeIcon)`
   height: 32px;
   width: 32px;
+
+  @media (max-width: 480px) {
+    height: 24px;
+    width: 24px;
+  }
 `;
 
 const CustomCopyright = styled.span`
@@ -180,14 +258,23 @@ const CustomCopyright = styled.span`
 `;
 
 const CustomCopyrightText = styled.h3`
+  &:hover {
+    color: var(--primary-color);
+    transition: 0.3s color;
+
+    > strong {
+      transition: 0.3s text-shadow;
+      text-shadow: var(--light-text-effect);
+    }
+  }
+
   > strong {
     color: var(--primary-color);
     font-weight: 700;
   }
 
-  > strong:hover {
-    transition: 0.3s text-shadow;
-    text-shadow: var(--light-text-effect);
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
 `;
 
@@ -195,10 +282,12 @@ const Footer = () => {
   return (
     <CustomFooter>
       <CustomFooterContent>
-        <CustomTitle>Gopizza</CustomTitle>
+        <CustomLogoContainer>
+          <CustomLogo>Gopizza</CustomLogo>
+        </CustomLogoContainer>
         <CustomContainers>
           <CustomContainer data-barvisible={true}>
-            <h2>Cardápio</h2>
+            <CustomTitleContainer>Cardápio</CustomTitleContainer>
             <CustomList>
               <CustomItemList>Pizzas tradicionais</CustomItemList>
               <CustomItemList>Pizzas especiais</CustomItemList>
@@ -208,9 +297,9 @@ const Footer = () => {
             </CustomList>
           </CustomContainer>
           <CustomContainer
-            data-barvisible={window.innerWidth > 720 ? true : false}
+            data-barvisible={window.innerWidth > 780 ? true : false}
           >
-            <h2>Contatos</h2>
+            <CustomTitleContainer>Contatos</CustomTitleContainer>
             <CustomList>
               <CustomItemList>
                 Av. Gopizza, N° 777, Centro - Cianorte-PR
@@ -220,9 +309,9 @@ const Footer = () => {
             </CustomList>
           </CustomContainer>
           <CustomContainer>
-            <h2>Sobre-nos</h2>
+            <CustomTitleContainer>Sobre-nos</CustomTitleContainer>
             <CustomTexto>
-              Na GoPizza, somos mais do que uma pizzaria - somos uma família.
+              Na Gopizza, somos mais do que uma pizzaria - somos uma família.
               Desde nossa inauguração, buscamos criar um ambiente acolhedor onde
               amigos e familiares se reúnam para compartilhar boas conversas e
               deliciosas fatias de pizza. Com um compromisso inabalável com a
@@ -233,6 +322,9 @@ const Footer = () => {
           </CustomContainer>
         </CustomContainers>
         <CustomSocialsMedias>
+          <CustomTitleContainer>
+            Acompanhe-nos nas redes sociais
+          </CustomTitleContainer>
           <CustomSocialMediasIcons>
             <CustomContainerIcon>
               <CustomIcon icon={faGithub} />
