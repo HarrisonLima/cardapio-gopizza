@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import styled from "styled-components";
 
@@ -239,6 +235,15 @@ const CustomContainerIcon = styled.span`
   }
 `;
 
+const CustomLink = styled.a`
+  &,
+  &:visited,
+  &:link {
+    color: inherit;
+    text-decoration: none;
+  }
+`;
+
 const CustomIcon = styled(FontAwesomeIcon)`
   height: 32px;
   width: 32px;
@@ -327,16 +332,19 @@ const Footer = () => {
           </CustomTitleContainer>
           <CustomSocialMediasIcons>
             <CustomContainerIcon>
-              <CustomIcon icon={faGithub} />
+              <CustomLink href="https://github.com/HarrisonLima">
+                <CustomIcon icon={faGithub} />
+              </CustomLink>
             </CustomContainerIcon>
             <CustomContainerIcon>
-              <CustomIcon icon={faInstagram} />
+              <CustomLink href="https://www.linkedin.com/in/harrison-fabiano-de-lima/">
+                <CustomIcon icon={faLinkedin} />
+              </CustomLink>
             </CustomContainerIcon>
             <CustomContainerIcon>
-              <CustomIcon icon={faLinkedin} />
-            </CustomContainerIcon>
-            <CustomContainerIcon>
-              <CustomIcon icon={faEnvelope} />
+              <CustomLink href="mailto:harrisonlima92@gmail.com">
+                <CustomIcon icon={faEnvelope} />
+              </CustomLink>
             </CustomContainerIcon>
           </CustomSocialMediasIcons>
         </CustomSocialsMedias>
